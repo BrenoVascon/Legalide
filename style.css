@@ -4,12 +4,20 @@
   --secondary-color: #784f33;
 }
 /*=====================NAV==================== */
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   padding: 21.7px;
+
+  position: fixed;
+  z-index: 5;
+  margin: auto;
+  top: -1px;
+  width: 100vw;
+  padding-bottom: 24px;
 }
 
 ul {
@@ -46,6 +54,11 @@ nav .menu-btn i {
   nav .menu-btn i {
     display: block;
   }
+  nav {
+    padding-bottom: 28px;
+    background: #f2f2f2;
+    position: fixed;
+  }
   nav ul {
     position: fixed;
     top: 80px;
@@ -57,13 +70,14 @@ nav .menu-btn i {
     display: block;
     transition: all 0.3s;
     z-index: 3;
+    overflow: hidden;
   }
   nav ul.open {
     left: 0;
   }
   nav ul li {
     /* width: 100%; */
-    margin: 50px;
+    margin: 50px 0;
   }
   nav ul li a {
     font-size: 23px;
@@ -75,18 +89,20 @@ nav .menu-btn i {
   }
 }
 
+.sticky {
+  background-color: rgb(90, 34, 34);
+}
+
 .search-icon {
   padding-right: 6px;
 }
 
-div.menu-btn {
+/* div.menu-btn {
   position: absolute;
   right: 37px;
-  top: 29.6px;
-}
+  top: 29.6px; 
+}*/
 
-nav img {
-}
 /*===================== Body, Main================ */
 * {
   margin: 0;
@@ -127,7 +143,8 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-main {
+main,
+nav {
   background-image: url(/project-legalide/assets/cover.png);
 }
 
@@ -184,4 +201,8 @@ header h1 {
 
 header p {
   margin-bottom: 3rem;
+}
+
+main h2 {
+  padding-top: 70px;
 }
