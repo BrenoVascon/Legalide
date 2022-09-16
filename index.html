@@ -1,177 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/project-legalide/style.css" rel="stylesheet" />
-    <title>Legalide</title>
-  </head>
-  <body>
-    <nav>
-      <div class="logo">
-        <img src="/project-legalide/assets/Legalide.png" alt="logo-legalide" />
-      </div>
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="/project-legalide/style.css" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Martel:wght@700&display=swap"rel="stylesheet"/>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"/>
+<title>Legalide</title>
+</head>
+<body onscroll="all()">
+<nav>
+  
+  <div class="logo">
+    <img src="/project-legalide/assets/Legalide.png" alt="logo-legalide" /></a>
+  </div>
 
-      <ul>
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">Product</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <a href=""
-        ><img
-          class="search-icon"
-          src="/project-legalide/assets/icon-search.png"
-          alt="Busca"
-      /></a>
+  <ul>
+    <li><a onclick="menuShoww()" href="#" class="active">Home</a></li>
+    <li><a onclick="menuShoww()" href="#product" id="aproduct">Product</a></li>
+    <li><a onclick="menuShoww()"href="#about"id="aabout">About Us</a></li>
+    <li><a onclick="menuShoww()" href="#contact"id="acontact">Contact</a></li>
+  </ul>
+  <a href=""
+    ><img
+      class="search-icon"
+      src="/project-legalide/assets/icon-search.png"
+      alt="Busca"
+  /></a>
 
-      <a href=""
-        ><img
-          class="shop-car"
-          src="/project-legalide/assets/shop-car.png"
-          alt="Busca"
-          style="padding-right: 7px"
-      /></a>
-      <div class="menu-btn">
-        <i onclick="menuShoww()"><img src="/project-legalide/assets/icn-menu.png" /></i>
-      </div>
-    </nav>
-    <main>
-      <h2>
-        <center>
-          Help to reclaim<br />
-          your life<br />
-          and freedom
-        </center>
-      </h2>
+  <a href=""
+    ><img
+      class="shop-car"
+      src="/project-legalide/assets/shop-car.png"
+      alt="Busca"
+      style="padding-right: 7px"
+  /></a>
+  <div class="menu-btn">
+    <i onclick="menuShoww()"><img src="/project-legalide/assets/icn-menu.png" /></i>
+  </div>
+</nav>
+<main>
+  <h2>
+    <center>
+      Help to reclaim<br />
+      your life<br />
+      and freedom
+    </center>
+  </h2>
+  <p>
+    <center>
+      We know how large objects will act <br />
+      but things on a small scale.
+    </center>
+  </p>
+  <button class="get">Get Quote Now</button>
+  <button class="learn">Learn More</button>
+  <picture>
+    <img src="/project-legalide/assets/moça.png" class="mulher" alt="Mulher sorrindo" />
+  </picture>
+</main>
+<header class="sessão2">
+  <h1>
+    <center>
+      Our Practice<br />
+      Areas
+    </center>
+  </h1>
+  <p>
+    <center>
+      Problems trying to resolve<br />
+      the conflict between the<br />
+      two major realms of Classical<br />
+      physics: Newtonian mechanics
+    </center>
+  </p>
+  <div class="cards">
+    <div class="card">
+      <img
+        src="/project-legalide/assets/icn settings .icn-lg.png"
+        alt="Balança Têmis"
+      />
+      <p>Family Law</p>
+    </div>
+    <div class="card2">
+      <img src="/project-legalide/assets/martelo.png" alt="Malhete" />
+      <p>Bussines Law</p>
+    </div>
+    <div class="card">
+      <img
+        src="/project-legalide/assets/cardlist.png"
+        alt="Balanla Têmis"
+      />
+      <p>Trust & Estates</p>
+    </div>
+  </div>
+</header>
+<section id="product">
+  <div class="advice">
+    <h2>Pratice<br>
+    Advice</h2>
+    <p>Problems trying to resolve<br>
+        the conflict between the <br>
+      two major realms of Classical <br>
+      physics: Newtonian mechanics </p>
+  </div>
+  <div class="cartao">
+    <div class="cartoes">
+      <h3>Frauds or Mislead</h3>
       <p>
-        <center>
-          We know how large objects will act <br />
-          but things on a small scale.
-        </center>
+        Newton thought that 
+        light was made up of 
+        particles, but then it 
+        was discovered</p>
+      <img src="/project-legalide/assets/img1sec3.png" />
+    </div>
+
+    <div class="cartoes">
+      <h3>Bailes & Warrants</h3>
+      <p>"Quantum mechanics"
+        is the description of the
+        behaviour of matter</p>
       </p>
-      <button class="get">Get Quote Now</button>
-      <button class="learn">Learn More</button>
-      <picture>
-        <img src="/project-legalide/assets/moça.png" class="mulher" alt="Mulher sorrindo" />
-      </picture>
-    </main>
-    <header class="sessão2">
-      <h1>
-        <center>
-          Our Practice<br />
-          Areas
-        </center>
-      </h1>
-      <p>
-        <center>
-          Problems trying to resolve<br />
-          the conflict between the<br />
-          two major realms of Classical<br />
-          physics: Newtonian mechanics
-        </center>
-      </p>
-      <div class="cards">
-        <div class="card">
-          <img
-            src="/project-legalide/assets/icn settings .icn-lg.png"
-            alt="Balança Têmis"
-          />
-          <p>Family Law</p>
+      <img src="/project-legalide/assets/img2sec3.png" />
+    </div>
+
+    <div class="cartoes">
+      <h3>Federal Drug Crimes</h3>
+      <p>They describe a
+      universe consisting of
+      bodies moving</p>
+      <img src="/project-legalide/assets/img3sec3.png" />
+    </div>
+
+    <div class="cartoes">
+      <h3>Traffic Related 
+        Crimes</h3>
+      <p>They finally obtained 
+        a consistent description 
+        of the behaviour </p>
+      <img src="/project-legalide/assets/img4sec3.png" />
+    </div>
+  </div>
+</section>
+<section id="about">
+  <h2>Who We Are</h2>
+  <p>&ensp;&ensp;Problems trying to resolve<br>
+    &ensp;&ensp;&ensp;the conflict between the <br>
+    &ensp;two major realms of Classical <br>
+    physics: Newtonian mechanics </p>
+    <img  class="homem"src="/project-legalide/assets/video.png" alt="homem sorrindo">
+    <h2>Most trusted in<br>
+      our field</h2>
+      <p class="p">Most calendars are designed for teams. Slate<br>
+        is designed for freelancers who want a <br>
+        simple way to plan their schedule.</p>
+
+        <div class="grouping">
+          <div class="container">
+            <img class="img">
+              <img height="32px" src="/project-legalide/assets/peoples.png">
+              <h4>the quick fox jumps over the lazy<br>
+              dog</h4>
+              <p>Things on a very small scale ...</p>
+          </div>
+          <div class="container">
+            <img class="img">
+              <img height="32px" src="/project-legalide/assets/iconelg.png">
+              <h4>the quick fox jumps over the lazy <br>
+                dog</h4>
+                <p>Things on a very small scale ...</p>
+          </div>
+
         </div>
-        <div class="card2">
-          <img src="/project-legalide/assets/martelo.png" alt="Malhete" />
-          <p>Bussines Law</p>
-        </div>
-        <div class="card">
-          <img
-            src="/project-legalide/assets/cardlist.png"
-            alt="Balanla Têmis"
-          />
-          <p>Trust & Estates</p>
-        </div>
+</section>
+<section id="logos">
+  <img id="logo"> <svg width="153" height="45" viewBox="0 0 153 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_964_13704)">
+    <path d="M35.642 46.9483L44.5587 47.1361C41.4856 46.0563 38.5056 44.7418 35.642 43.1925V46.9483ZM49.0752 45.7042V46.9483L44.5587 47.1361C53.0563 50.0704 60.8323 50.4695 66.606 48.8263C61.973 48.8732 55.9432 48.216 49.0752 45.7042ZM144.272 18.662C147.974 18.662 151.001 15.6338 151.001 11.8779C151.001 8.12206 147.997 6.12675 144.272 6.12675C140.571 6.12675 137.544 8.14553 137.544 11.8779C137.544 15.6103 140.547 18.662 144.272 18.662ZM137.521 46.9483H151.001V21.0094H137.521V46.9483ZM120.362 46.9483H133.842V1.10327L120.362 7.51172V46.9483ZM113.145 18.9202C108.908 14.6479 101.411 14.9061 101.411 14.9061C101.411 14.9061 93.8916 14.6479 89.6777 18.9202C85.4405 23.1925 85.7665 26.8779 85.7665 31.2676C85.7665 35.6573 85.4405 39.3192 89.6777 43.5915C93.9149 47.8638 101.411 47.6056 101.411 47.6056C101.411 47.6056 108.931 47.8638 113.145 43.5915C117.382 39.3192 117.056 35.6573 117.056 31.2676C117.033 26.8545 117.359 23.169 113.145 18.9202ZM103.879 35.7981C103.879 36.6432 103.46 38.7324 101.388 38.7324C99.3162 38.7324 98.8971 36.6432 98.8971 35.7981V26.3145C98.8971 24.2723 100.597 23.7559 101.388 23.7559C102.18 23.7559 103.879 24.2488 103.879 26.3145V35.7981ZM79.1546 18.9202C74.9174 14.6479 67.4209 14.9061 67.4209 14.9061C67.4209 14.9061 59.9243 14.6479 55.6871 18.9202C55.2448 19.3662 54.8257 19.8357 54.4532 20.3286C45.5598 13.3803 37.5743 9.41313 30.6831 5.9859V1.12675L25.4448 3.61501C12.7798 -1.57279 4.72446 -0.657291 2.79212 3.63848C2.79212 3.63848 -3.00491 11.338 17.1799 29.6479V46.9483H30.6598V40.2347C29.1465 39.2488 27.6332 38.1925 26.1432 37.0422C22.6976 34.4131 19.7641 31.9718 17.2032 29.6714V22.3944C20.2531 25.8451 24.304 29.7653 29.6354 34.2019L30.6831 35.0469V28.0516C30.6831 26.4319 31.0788 23.7793 33.1974 23.7793C35.316 23.7793 35.6652 25.399 35.6652 27.3005V38.7324C39.8559 41.5962 44.3491 43.9202 49.0985 45.6807V23.6385C49.0985 19.2488 45.9788 14.8591 39.6463 14.8591C35.9679 14.8357 32.5456 16.784 30.6831 20V7.25351C40.4379 12.1596 50.216 18.169 53.941 20.939C51.5663 24.3662 51.7759 27.5352 51.7759 31.1972C51.7759 35.5868 51.4499 39.2488 55.6871 43.5211C59.9243 47.7934 67.4209 47.5352 67.4209 47.5352C67.4209 47.5352 74.9407 47.7934 79.1546 43.5211C83.3918 39.2488 83.0426 35.5868 83.0426 31.1972C83.0426 26.8544 83.3918 23.169 79.1546 18.9202ZM17.1799 7.51172V22.3709C5.84196 9.57745 8.12353 4.5305 8.98493 3.8028C12.1279 1.12675 17.7154 1.92487 23.9781 4.29576L17.1799 7.51172ZM69.912 35.7981C69.912 36.6432 69.4929 38.7324 67.4209 38.7324C65.3488 38.7324 64.9298 36.6432 64.9298 35.7981V26.3145C64.9298 24.2723 66.6293 23.7559 67.4209 23.7559C68.2124 23.7559 69.912 24.2488 69.912 26.3145V35.7981Z" fill="#737373"/>
+    </g>
+    <defs>
+    <clipPath id="clip0_964_13704">
+    <rect width="130" height="80" fill="white" transform="translate(2)"/>
+    </clipPath>
+    </defs>
+    </svg>
+    <img id="logo"><svg width="147" height="75" viewBox="0 0 147 99" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#clip0_964_13707)">
+      <path d="M4 1.67001H25.1215V58.7454C25.1215 67.7976 29.1938 73.1852 32.5059 75.4277C29.058 78.4634 18.6059 81.1435 10.7328 74.662C6.11758 70.8333 4 64.4612 4 58.5266V1.67001ZM135.914 49.1189V43.1023H142.376V22.099H135.29C132.548 9.43686 121.39 0.029129 108.06 0.029129C92.6939 0.029129 80.1785 12.6092 80.1785 28.1156V77.1233C84.5223 77.7523 89.7891 77.0413 94.2143 73.2946C98.8566 69.4659 100.947 63.1211 100.947 57.1592V55.3269H111.481V34.3236H100.947V27.9515C100.947 18.4891 115.119 18.4891 115.119 27.9515V49.0369C115.119 64.5159 127.607 77.1233 143 77.1233V56.2021C139.063 56.2021 135.914 53.0023 135.914 49.1189ZM56.0164 22.0443V52.9476C56.0164 57.1592 49.5551 57.1592 49.5551 52.9476V22.0443H28.7051V58.3352C28.7051 64.844 30.877 73.1032 40.9219 75.8106C50.9668 78.4907 56.7223 72.9117 56.7223 72.9117C56.1521 76.5764 52.7857 79.2838 47.2475 79.8308C43.0395 80.2683 37.6912 78.8463 35.0307 77.6976V96.9233C41.8449 98.9744 49.0121 99.6034 56.0979 98.2087C68.8848 95.72 76.9479 84.9722 76.9479 70.6418V21.9076H56.0164V22.0443Z" fill="#737373"/>
+      </g>
+      <defs>
+      <clipPath id="clip0_964_13707">
+      <rect width="139" height="99" fill="white" transform="translate(4)"/>
+      </clipPath>
+      </defs>
+      </svg>
+      <img id="logo"> <svg width="153" height="90" viewBox="0 0 153 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_964_13710)">
+        <path d="M151 0.211853C132.189 12.8304 130.187 21.9883 128.557 24.7898C126.997 27.662 125.833 38.9857 123.132 44.471C120.408 50.027 110.514 54.4058 107.743 56.2421C105.02 58.0784 101.155 65.2116 97.9886 71.3561C72.8216 70.3203 59.0158 80.4905 37.6436 93.3915C44.4883 91.108 47.7244 89.46 47.7244 89.46C69.6553 80.9848 80.1552 73.3807 113.168 77.8773C113.424 77.8773 113.61 78.0185 113.82 78.0656C114.728 78.5836 115.054 79.69 114.542 80.6082L101.993 103.162C101.411 104.268 100.177 104.857 98.9431 104.598C69.4225 98.9946 46.118 108.67 24.6992 108.976C7.61078 109.235 2 101.09 2 100.713C2 100.454 2.13969 100.313 2.39578 100.313C2.39578 100.313 11.3125 100.313 26.3988 96.711C43.5337 63.6814 58.8062 52.1222 75.4291 52.1222C75.4291 52.1222 92.1217 52.1222 96.5219 66.6948C101.83 57.3486 103.11 55.1121 103.11 55.1121C104.344 52.8991 111.259 36.9375 123.225 21.8235C135.215 6.75656 144.272 3.01336 151 0.211853Z" fill="#737373"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_964_13710">
+        <rect width="149" height="109" fill="white" transform="translate(2)"/>
+        </clipPath>
+        </defs>
+        </svg>
+        <img id="logo"> <svg width="149" height="45" viewBox="0 0 149 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_964_13714)">
+          <path d="M38.4157 4.70455L28.3349 6.79545L28.2883 39.1591C28.2883 45.1364 32.898 49 39.021 49C42.4201 49 44.9111 48.3864 46.2847 47.6591V39.9773C44.9577 40.5 38.439 42.3636 38.439 36.4091V22.0455H46.2847V13.4545H38.439L38.4157 4.70455ZM59.1593 16.4318L58.5307 13.4545H49.5907V48.2727H59.9043V24.8409C62.3488 21.7045 66.4696 22.3182 67.7966 22.7273V13.4545C66.3997 12.9773 61.5805 12.0909 59.1593 16.4318ZM80.6479 0L70.2644 2.15909V10.3864L80.6479 8.22727V0ZM10.4549 23.7045C10.4549 22.1364 11.8052 21.5227 13.9704 21.5C17.1133 21.5 21.1177 22.4318 24.2607 24.0909V14.5909C20.8383 13.2727 17.416 12.75 13.9937 12.75C5.6124 12.75 0.0249023 17.0227 0.0249023 24.1591C0.0249023 35.3409 15.7397 33.5227 15.7397 38.3409C15.7397 40.2046 14.0868 40.8182 11.7819 40.8182C8.35959 40.8182 3.93615 39.4318 0.467246 37.5909V46.6818C4.30865 48.2955 8.19662 48.9773 11.7587 48.9773C20.3494 48.9773 26.2629 45.3864 26.2629 38.1136C26.2629 26.0909 10.4549 28.25 10.4549 23.7045ZM149.002 31.2727C149.002 20.9318 143.88 12.7727 134.055 12.7727C124.23 12.7727 118.247 20.9318 118.247 31.2045C118.247 43.3636 125.301 48.9773 135.359 48.9773C140.294 48.9773 143.996 47.8864 146.813 46.3636V38.7727C143.996 40.1591 140.76 41 136.663 41C132.635 41 129.096 39.6136 128.631 34.8864H148.862C148.908 34.3636 149.002 32.25 149.002 31.2727ZM128.537 27.4545C128.537 22.9091 131.401 21 133.985 21C136.523 21 139.223 22.9091 139.223 27.4545H128.537ZM102.253 12.7727C98.2019 12.7727 95.5944 14.6364 94.151 15.9318L93.6155 13.4318H84.5126V59.9773L94.8494 57.8409L94.8727 46.4318C96.3627 47.5 98.5744 48.9773 102.183 48.9773C109.586 48.9773 116.338 43.7045 116.338 30.8864C116.361 19.1591 109.517 12.7727 102.253 12.7727ZM99.785 40.6136C97.3638 40.6136 95.9204 39.75 94.9193 38.7045L94.8494 23.7045C95.9204 22.5455 97.4104 21.7045 99.785 21.7045C103.557 21.7045 106.164 25.8409 106.164 31.1136C106.187 36.5455 103.626 40.6136 99.785 40.6136ZM70.2877 48.2727H80.6711V13.4545H70.2877V48.2727Z" fill="#737373"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_964_13714">
+          <rect width="149" height="60" fill="white"/>
+          </clipPath>
+          </defs>
+          </svg>
+          <img id="logo"> <svg width="151" height="70" viewBox="0 0 151 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_964_13717)">
+            <path d="M42.2329 33.3703C42.0613 38.7687 44.7591 41.1593 44.8258 42.6776C44.7941 42.9866 44.6888 43.2835 44.5188 43.5435C44.3488 43.8035 44.119 44.019 43.8487 44.172L40.7983 46.3075C40.4035 46.5843 39.9381 46.743 39.4565 46.7651C39.3541 46.7604 37.5047 47.2013 34.5758 40.6612C32.7888 42.892 30.5152 44.6843 27.929 45.9009C25.3427 47.1175 22.5124 47.7262 19.6547 47.6804C15.7749 47.8925 5.26032 45.4781 5.8013 34.2832C5.42238 25.1594 13.9184 19.4916 22.7052 19.9707C24.3972 19.9755 27.8528 20.0589 33.9037 21.4651V17.7422C34.5448 11.4357 30.4005 6.54253 23.2247 7.27663C22.6527 7.27901 18.6013 7.15745 12.3002 9.68626C10.5462 10.4919 10.3222 10.3584 9.73831 10.3584C7.97238 10.3584 8.69924 5.2388 9.03766 4.59051C10.2793 3.06512 17.5837 0.216937 24.7523 0.257455C29.5455 -0.16649 34.313 1.31295 38.0242 4.376C39.5329 6.06366 40.6838 8.03961 41.4076 10.1845C42.1314 12.3294 42.4129 14.5988 42.2353 16.8556L42.2329 33.3703ZM21.6375 41.0902C29.3662 40.9782 32.6383 36.3305 33.3842 33.8279C33.9705 31.4326 33.8727 29.9167 33.8727 27.2973C31.5682 26.7444 28.2508 26.1414 24.4449 26.1366C20.8344 25.8649 14.2401 27.4785 14.4975 33.8255C14.202 37.8273 17.1476 41.3095 21.6375 41.0902ZM62.3708 46.584C60.4976 46.7556 59.6254 45.4256 59.3489 44.1124L47.4807 4.86937C47.2495 4.20678 47.097 3.52274 47.0231 2.8244C46.9793 2.53649 47.0516 2.24297 47.2241 2.00834C47.3966 1.77372 47.6552 1.61717 47.943 1.5731C48.0002 1.56357 47.4354 1.5731 53.2456 1.5731C55.338 1.36336 56.0196 3.01031 56.2365 4.04471L64.7492 37.6104L72.6518 4.04471C72.7781 3.27725 73.3525 1.40626 75.7023 1.60409H79.7918C80.309 1.56119 82.4395 1.48492 82.8137 4.07569L90.7783 38.0704L99.565 4.07569C99.6794 3.55611 100.213 1.36575 102.587 1.60409H107.287C107.489 1.5731 108.752 1.41103 108.538 3.64906C108.435 4.08999 109.35 1.10834 95.9664 44.1434C95.6924 45.4566 94.8177 46.7866 92.9446 46.615H88.4904C85.8832 46.8891 85.509 44.3126 85.4685 44.0528L77.5659 11.369L69.7539 44.0194C69.7157 44.2792 69.3416 46.8557 66.732 46.5816H62.3708V46.584ZM127.546 47.9258C126.145 47.9282 119.462 47.8543 113.876 44.9966C113.32 44.761 112.846 44.3654 112.514 43.8601C112.183 43.3547 112.009 42.7623 112.015 42.158V39.5958C112.015 37.5818 113.492 37.9512 114.119 38.192C116.512 39.1596 118.047 39.8937 120.985 40.48C129.719 42.2748 133.561 39.9319 134.502 39.4123C137.636 37.5508 137.884 33.2917 135.754 31.0822C133.256 28.9872 132.064 28.9085 123.092 26.077C121.986 25.7696 112.677 22.8332 112.656 13.5975C112.51 6.86668 118.626 0.207403 129.224 0.262221C132.243 0.259838 140.289 1.24657 142.467 3.98512C142.789 4.48326 142.948 5.06958 142.925 5.66305V8.07269C142.925 9.13093 142.538 9.66005 141.764 9.66005C139.927 9.45507 136.666 6.99777 130.048 7.09787C128.406 7.01207 120.542 7.31476 120.894 13.0493C120.792 17.5682 127.236 19.2628 127.973 19.4583C136.662 22.0729 139.567 22.5067 143.015 26.5084C147.1 31.8115 144.898 38.0204 144.052 39.7221C139.505 48.6576 127.746 47.9306 127.546 47.9258ZM137.126 72.9184C120.437 85.2454 96.2095 91.807 75.5235 91.807C47.6119 91.9911 20.6409 81.7268 -0.08753 63.032C-1.64374 61.6281 -0.271035 59.7047 1.62121 60.7749C24.6152 73.9293 50.6492 80.8411 77.1393 80.8242C96.9215 80.7181 116.488 76.7047 134.715 69.0144C137.522 67.8226 139.903 70.8734 137.126 72.9184ZM144.083 64.984C141.947 62.2383 129.955 63.7017 124.586 64.3428C122.968 64.5264 122.694 63.1225 124.159 62.0857C133.709 55.3717 149.393 57.2951 151.194 59.5522C152.993 61.8093 150.706 77.5255 141.766 85.0333C140.394 86.194 139.08 85.5815 139.691 84.0561C141.702 78.9913 146.218 67.7321 144.083 64.984Z" fill="#737373"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_964_13717">
+            <rect width="153" height="92" fill="white" transform="translate(-1)"/>
+            </clipPath>
+            </defs>
+            </svg>
+            <img id="logo"><svg width="151" height="120" viewBox="0 0 151 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_964_13719)">
+              <path d="M133.19 54.5545C128.495 54.5545 124.363 56.5153 121.327 59.583C110.152 51.7715 95.0953 46.743 78.4111 46.2053L87.0819 6.73628L114.691 12.9982C114.691 19.8294 120.2 25.3955 126.961 25.3955C133.848 25.3955 139.388 19.6712 139.388 12.8401C139.388 6.00888 133.879 0.284607 126.961 0.284607C122.141 0.284607 117.977 3.22581 115.911 7.24229L85.4228 0.41111C83.889 -2.563e-05 82.3865 1.10688 81.9796 2.65654L72.4636 46.1737C55.9046 46.8695 41.0046 51.898 29.7983 59.7095C26.7619 56.5153 22.4735 54.5545 17.7781 54.5545C0.373892 54.5545 -5.32317 78.1474 10.6098 86.212C10.0464 88.7104 9.79595 91.367 9.79595 94.0236C9.79595 120.526 39.3455 142 75.6252 142C112.061 142 141.611 120.526 141.611 94.0236C141.611 91.367 141.329 88.5839 140.64 86.0855C156.26 77.9893 150.501 54.5545 133.19 54.5545ZM35.8709 87.8882C35.8709 80.9305 41.3802 75.3327 48.2981 75.3327C55.0594 75.3327 60.5686 80.8988 60.5686 87.8882C60.5686 94.7193 55.0594 100.285 48.2981 100.285C41.4115 100.317 35.8709 94.7193 35.8709 87.8882ZM102.952 117.458C91.5581 128.97 59.4104 128.97 48.0163 117.458C46.7642 116.351 46.7642 114.391 48.0163 113.126C49.1119 112.019 51.0527 112.019 52.1483 113.126C60.8504 122.139 89.7113 122.297 98.789 113.126C99.8846 112.019 101.825 112.019 102.921 113.126C104.204 114.391 104.204 116.351 102.952 117.458ZM102.702 100.317C95.9405 100.317 90.4312 94.751 90.4312 87.9198C90.4312 80.9621 95.9405 75.3643 102.702 75.3643C109.588 75.3643 115.129 80.9305 115.129 87.9198C115.098 94.7193 109.588 100.317 102.702 100.317Z" fill="#737373"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_964_13719">
+              <rect width="149" height="142" fill="white" transform="translate(1)"/>
+              </clipPath>
+              </defs>
+              </svg>    
+
+      <div id="group-input"> 
+        <h3>Subscribe For
+           Latest<br>
+          Newsletter</h3>
+        <label for ="email">
+        <input type="email" placeholder="Your Email" size="30"
+        class="subEmail" />
+        <button>subscribe</button>
+      </label>
       </div>
-    </header>
-    <section class="Practice">
-      <div class="advice">
-        <h2>Pratice<br>
-        Advice</h2>
-        <p>Problems trying to resolve<br>
-            the conflict between the <br>
-          two major realms of Classical <br>
-          physics: Newtonian mechanics </p>
-      </div>
-      <div class="cartao">
-        <div class="cartoes">
-          <h3>Frauds or Mislead</h3>
-          <p>
-            Newton thought that 
-            light was made up of 
-            particles, but then it 
-            was discovered</p>
-          <img src="/project-legalide/assets/img1sec3.png" />
-        </div>
+</section>
+<section id="contact">
+  <div class="cardct">
+    <H2>Get it Touch</H2>
+    <p>Problems trying to resolve<br>
+      the conflict between the two major <br>
+      realms of Classical physics: <br>
+      Newtonian mechanics </p>
+  </div>
+    <div class="cardct1">
+      <img src="./assets/TEL.png" alt="phone" class="phone">
+      <a href="mailto:georgia.young@example.com">georgia.young@example.com</a>
+      <a href="mailto:georgia.young@ple.com">georgia.young@ple.com</a>
+      <h5>Get Support</h5>
+      <button>Submit Request</button>
+    </div>
+    <div class="cardct2">
+      <img src="./assets/local.png" alt="localization" class="localization">
+      <a href="mailto:georgia.young@example.com">georgia.young@example.com</a>
+      <a href="mailto:georgia.young@ple.com">georgia.young@ple.com</a>
+      <h5>Get Support</h5>
+      <button>Submit Request</button>
+    </div>
+    <div class="cardct3">
+      <img src="./assets/avião.png" alt="avião" class="aviao">
+      <a href="mailto:georgia.young@example.com">georgia.young@example.com</a>
+      <a href="mailto:georgia.young@ple.com">georgia.young@ple.com</a>
+      <h5>Get Support</h5>
+      <button >Submit Request</button>
+    </div>
+  </div>
+</section>
+<footer>
+  <header>
+<div id="contactus">
+  <h2>Request a Free <br>
+    Consultation
+</h2>
+<p>the quick fox jumps over <br>
+ the lazy dog</p>
 
-        <div class="cartoes">
-          <h3>Bailes & Warrants</h3>
-          <p>"Quantum mechanics"
-            is the description of the
-            behaviour of matter</p>
-          </p>
-          <img src="/project-legalide/assets/img2sec3.png" />
-        </div>
+<button id ="btnus"><a href="#">Contact Us</a></button>
+</div>
+<div id="Links">
+  <div class="link">
+  <ul>
+    <h3>Company Info</h3>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Carrier</a></li>
+    <li><a href="#">We are hiring</a></li>
+    <li><a href="#">Blog</a></li>
+  </ul>
+</div>
+<div class="link">
+  <ul>
+    <h3>Legal</h3>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Carrier</a></li>
+    <li><a href="#">We are hiring</a></li>
+    <li><a href="#">Blog</a></li>
+  </ul>
+</div>
+<div class="link">
+  <ul>
+    <h3>Features</h3>
+    <li><a href="#">Business Marketing</a></li>
+    <li><a href="#">ser Analytic</a>U</li>
+    <li><a href="#">Live Chat</a></li>
+    <li><a href="#">Unlimited Support</a></li>
+  </ul>
+</div>
+<div class="link">
+  <ul>
+    <h3>Resources</h3>
+    <li><a href="#">IOS & Android</a></li>
+    <li><a href="#">Watch a Demo</a></li>
+    <li><a href="#">Customers</a></li>
+    <li><a href="#">API</a></li>
+  </ul>
+</div>
+<div class="link">
+  <ul>
+    <h4>Get In Touch</h4>
+    <li><img class="tel"src="/project-legalide/assets/TEL.png"><a href="tel:+55(480) 555-0103">(480) 555-0103</a></li>
+    <li><img class="localization"src="/project-legalide/assets/local.png"><a href="#">4517 Washington Ave.</a></li>
+    <li><img class="plane-mail"src="/project-legalide/assets/avião.png"><a href="mailto:debra.holt@example.com">debra.holt@example.com</a></li>
+    </ul>
+  
+ </div>
+</div>
+</header> 
+ <div class="social-links">
+  <h3>Made With Love Brt Figmaland<br>
+  All Right Reserved<br>
 
-        <div class="cartoes">
-         <h3>Federal Drug Crimes</h3>
-         <p>They describe a
-          universe consisting of
-          bodies moving</p>
-          <img src="/project-legalide/assets/img3sec3.png" />
-        </div>
-
-        <div class="cartoes">
-          <h3>Traffic Related 
-            Crimes</h3>
-          <p>They finally obtained 
-            a consistent description 
-            of the behaviour </p>
-          <img src="/project-legalide/assets/img4sec3.png" />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <h2>Who We Are</h2>
-      <p>&ensp;&ensp;Problems trying to resolve<br>
-        &ensp;&ensp;&ensp;the conflict between the <br>
-        &ensp;two major realms of Classical <br>
-        physics: Newtonian mechanics </p>
-        <img  class="homem"src="/project-legalide/assets/video.png" alt="homem sorrindo">
-        <h2>Most trusted in<br>
-          our field</h2>
-          <p class="p">Most calendars are designed for teams. Slate<br>
-            is designed for freelancers who want a <br>
-            simple way to plan their schedule.</p>
-
-            <div class="grouping">
-              <div class="container">
-                <img class="img">
-                 <img height="32px" src="/project-legalide/assets/peoples.png">
-                 <h4>the quick fox jumps over the lazy<br>
-                  dog</h4>
-                  <p>Things on a very small scale ...</p>
-              </div>
-              <div class="container">
-                <img class="img">
-                 <img height="32px" src="/project-legalide/assets/iconelg.png">
-                  <h4>the quick fox jumps over the lazy <br>
-                    dog</h4>
-                    <p>Things on a very small scale ...</p>
-              </div>
-
-            </div>
-    </section>
-  </body>
-  <script type="text/javascript" src="script.js"></script>
-  <script src="https://unpkg.com/scrollreveal"></script>
+  <ul><li>
+    <img src="/project-legalide/assets/facebookicon.png" class="icon">
+  </li>
+  <li>
+    <img src="/project-legalide/assets/Instaicon.png" class="icon">
+  </li>
+  <li>
+    <img src="/project-legalide/assets/twittter icon.png" class="icon">
+  </li>
+  <li>
+    <img src="/project-legalide/assets/youtubeicon.png" class="icon">
+  </li>
+</ul>
+</div>
+</footer>
+</body>
+<script type="text/javascript" src="script.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
 </html>
+
