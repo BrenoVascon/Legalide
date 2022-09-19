@@ -3,6 +3,9 @@
   font-size: 62.5%;
   --secondary-color: #784f33;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   margin: 0 auto;
@@ -91,7 +94,7 @@ nav .menu-btn i {
   nav ul li a {
     font-size: 23px;
   }
-  nav ul li a.active,
+  nav ul li a#active,
   nav ul li a:hover {
     background-color: none;
     color: #784f33;
@@ -249,7 +252,7 @@ main h2 {
 }
 
 .advice {
-  margin-top: 15rem;
+  padding-top: 8rem;
   display: flex;
   flex-direction: column;
   padding-bottom: 10rem;
@@ -433,7 +436,7 @@ label {
 
 .cardct {
   text-align: center;
-  padding-top: 3rem;
+  margin-top: 8rem;
   gap: 1rem;
 }
 .cardct h2 {
