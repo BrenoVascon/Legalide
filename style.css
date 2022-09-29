@@ -22,7 +22,7 @@ nav {
 
   z-index: 5;
   margin: auto;
-  top: -1px;
+
   width: 100vw;
   padding-bottom: 24px;
 }
@@ -65,7 +65,11 @@ nav .menu-btn i {
   nav .menu-btn i {
     display: block;
   }
-
+  main {
+    /* nav { */
+    background-image: url(assets/cover-mob.png);
+    width: 100%;
+  }
   nav {
     padding-bottom: 28px;
     background: #f2f2f2;
@@ -99,6 +103,16 @@ nav .menu-btn i {
     background-color: none;
     color: #784f33;
   }
+
+  #logos {
+    margin: auto;
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+    background-color: #fafafa;
+    margin-top: 13rem;
+    padding-top: 4rem;
+  }
 }
 
 .sticky {
@@ -124,7 +138,14 @@ nav .menu-btn i {
   margin: auto;
   font-family: 'Poppins', sans-serif;
 }
+.cards {
+  flex-direction: column;
+  display: flex;
 
+  text-align: center;
+  width: 32.9rem;
+  height: 45rem;
+}
 body {
   /* width: 100%; */
   min-width: 370px;
@@ -143,6 +164,7 @@ body {
   margin-right: auto;
   display: block;
   font-family: 'Open Sans';
+  border: solid 1px #784f33;
 }
 
 .learn {
@@ -156,14 +178,19 @@ body {
   margin-right: auto;
   font-family: open sans;
 }
-main {
-  /* nav { */
-  background-image: url(assets/cover.png);
-  width: 100%;
+#home p {
+  font-size: 20px;
+  width: 370px;
+  text-align: center;
 }
 
-main center {
+#home h2 {
   padding: 2.5rem;
+
+  text-align: center;
+  font-size: 40px;
+  margin: auto;
+  padding-top: 90px;
 }
 
 .mulher {
@@ -177,19 +204,19 @@ main center {
   top: 1rem;
   z-index: 2;
 }
+.firstheader {
+  text-align: center;
+  height: 58em;
+}
 
-.sessão2 h1 {
-  font-family: 'Martel';
+.sessão2 {
+  padding-bottom: 10rem;
+}
+.Texth1 {
+  text-align: center;
+  width: 30rem;
 }
 /* ======================Section2================= */
-.cards {
-  flex-direction: column;
-  display: flex;
-
-  text-align: center;
-  width: 32.9rem;
-  height: 45rem;
-}
 
 .card {
   background: #f9f9f9;
@@ -198,6 +225,7 @@ main center {
   height: 50.1rem;
   border-radius: 0.5rem;
   padding-top: 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .card2 {
@@ -210,6 +238,7 @@ main center {
   border-radius: 0.5rem;
   align-items: center;
   padding-top: 3rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 header h1 {
@@ -223,7 +252,25 @@ header p {
 main h2 {
   padding-top: 70px;
 }
+.sessão2 h1 {
+  font-family: 'Martel';
+  text-align: center;
+  width: 200px;
+}
 
+.advice p {
+  font-size: 13px;
+  margin-top: 10px;
+  font-family: 'Martel';
+  width: 250px;
+  text-align: center;
+}
+.advice h2 {
+  color: #252b42;
+  font-family: 'Martel';
+  width: 130px;
+  margin: auto;
+}
 .cartoes img {
   width: 100%;
   height: 144px;
@@ -232,7 +279,7 @@ main h2 {
 
 .cartao {
   justify-content: center;
-  padding-bottom: 160px;
+  padding-bottom: 120px;
   gap: 3px;
   background-color: #f3f3f3;
 }
@@ -244,6 +291,8 @@ main h2 {
   background-color: #ffffff;
   justify-content: center;
   margin-bottom: 20px;
+  font-size: 14px;
+  text-align: center;
 }
 
 .Practice .cartoes p {
@@ -252,10 +301,9 @@ main h2 {
 }
 
 .advice {
-  padding-top: 8rem;
   display: flex;
   flex-direction: column;
-  padding-bottom: 10rem;
+  padding-bottom: 7rem;
   background-color: #f2f2f2;
 }
 
@@ -267,7 +315,6 @@ main h2 {
 
 .advice h2 {
   font-size: 4rem;
-  margin-top: 70px;
   color: #252b42;
   font-family: 'Martel';
 }
@@ -275,6 +322,11 @@ main h2 {
   color: #252b42;
 }
 /* ===============Containers =============== */
+.homemsr {
+  margin: auto;
+  display: flex;
+}
+
 .container {
   display: flex;
 
@@ -282,20 +334,34 @@ main h2 {
   align-items: flex-start;
   flex-wrap: wrap;
   justify-content: center;
+  width: 380px;
 }
-
+.grouping1 h2 {
+  display: flex;
+  margin: 0 auto;
+}
 .container h4 {
   font-size: 13px;
   margin: 0;
 }
 
 .container p {
-  margin: 0 auto;
+  margin: auto;
   padding-left: 4rem;
+  display: flex;
+  justify-content: center;
+}
+#about p {
+  font-size: 13px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 .grouping {
   margin: auto;
+  position: relative;
+  right: 20px;
 }
 
 html p {
@@ -304,13 +370,13 @@ html p {
 
 .p {
   align-items: center;
-  padding-left: 22px;
+
   margin: auto;
 }
 
 #about {
   display: flex;
-  flex-wrap: wrap;
+
   justify-content: center;
   flex-direction: column;
 }
@@ -323,11 +389,7 @@ html p {
   margin-top: 8rem;
   font-size: 40px;
   font-family: 'Martel';
-}
-
-#about p {
-  font-size: 13px;
-  margin-bottom: 30px;
+  justify-content: center;
 }
 
 .container img {
@@ -336,9 +398,7 @@ html p {
 
 #logos {
   margin: auto;
-  flex-direction: column;
-  display: flex;
-  gap: 20px;
+
   background-color: #fafafa;
   margin-top: 13rem;
   padding-top: 4rem;
@@ -355,7 +415,7 @@ html p {
   flex-wrap: wrap;
   margin-top: 6rem;
   width: 100%;
-  padding-bottom: 7rem;
+  padding-bottom: 3.5rem;
   text-align: center;
 }
 #group-input h3 {
@@ -400,6 +460,7 @@ label {
   width: 300px;
   margin: auto;
   padding: 30px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .cardct1 {
@@ -547,4 +608,167 @@ label {
   padding-top: 2rem;
   list-style: none;
   margin: 0;
+}
+
+/* ==============Desktop=========== */
+@media (min-width: 1024px) {
+  * {
+    box-sizing: border-box;
+  }
+  nav {
+  }
+  #front-menu {
+    height: 785px;
+    display: flex;
+  }
+
+  html main {
+    background-image: url(./assets/background_desktop.png);
+  }
+
+  main #home h2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 480px;
+    text-align: start;
+    font-size: 55px;
+
+    margin: 0;
+    padding-left: 120px;
+    line-height: 65px;
+  }
+
+  #home p {
+    margin: 0;
+    width: 490px;
+    padding: 0 0 2rem 11rem;
+  }
+  #home {
+    padding-left: 8rem;
+  }
+  .button-home {
+    display: flex;
+    width: 480px;
+    margin: 0;
+    padding-left: 12rem;
+    padding-top: 2rem;
+  }
+  .learn {
+    margin: 0;
+  }
+  #front-menu .mulher {
+    position: relative;
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .mulherIcon {
+  }
+
+  body .cards {
+    display: flex;
+    width: 1046px;
+    margin: auto;
+    flex-direction: row;
+    height: 20rem;
+    gap: 3rem;
+    padding-top: 3rem;
+  }
+
+  .card {
+    width: 329px;
+    height: 147px;
+  }
+  .card2 {
+    width: 329px;
+    height: 147px;
+  }
+  .Texth1 {
+    width: 600px;
+    text-align: center;
+    vertical-align: top;
+  }
+  .firstheader {
+    text-align: center;
+
+    height: 48.5rem;
+  }
+  .cartao {
+    display: flex;
+    gap: 3rem;
+  }
+
+  .cartoes {
+    margin: 0;
+  }
+
+  .advice {
+    padding: 8rem;
+  }
+
+  .advice h2 {
+    width: 300px;
+    padding-top: 3rem;
+  }
+  .Agroup {
+    display: flex;
+    gap: 8rem;
+  }
+  .homemrs {
+    width: 598px;
+  }
+  .container {
+    display: flex;
+    gap: 1.4rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 350px;
+  }
+
+  #about .p {
+    width: 468px;
+    text-align: center;
+  }
+  .grouping1 {
+    padding-bottom: 5rem;
+  }
+
+  /* ==============LOGOS================ */
+
+  #logos {
+    margin: auto;
+    /* flex-direction: column; */
+    display: flex;
+    /* gap: 20px; */
+    background-color: #fafafa;
+    margin-top: 13rem;
+    padding-top: 0rem;
+    position: relative;
+    top: 150px;
+    height: 350px;
+  }
+  .color-group {
+    background-color: #252b42;
+    width: 100%;
+    height: 77px;
+    position: relative;
+    top: 161px;
+  }
+  #group-input {
+    background: rgb(0, 114, 181);
+    background: linear-gradient(
+      36deg,
+      rgba(0, 114, 181, 1) 0%,
+      rgba(41, 92, 122, 1) 100%
+    );
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    width: 90%;
+    padding-bottom: 3.5rem;
+    text-align: center;
+    z-index: 20;
+    position: relative;
+  }
 }

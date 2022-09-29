@@ -5,6 +5,7 @@ var contact = document.querySelector('#acontact')
 var product = document.querySelector('#aproduct')
 var about = document.querySelector('#aabout')
 var menu = document.querySelector('nav ul li a')
+// window.addEventListener('scroll', all())
 
 function onScroll() {
   console.log(scrollY)
@@ -20,34 +21,36 @@ function HoverMenu() {
 }
 
 function HoverProduct() {
-  if (scrollY > 1795) {
+  if (scrollY > 1796) {
     product.classList.add('active')
   }
-  if (scrollY > 3784) {
+  if (scrollY > 3755) {
     product.classList.remove('active')
   }
-  if (scrollY > 1794) {
-    product.classList.remove('#active')
+  if (scrollY < 1794) {
+    product.classList.remove('active')
   }
 }
 
-// function hovermenu() {
-//   if (scrollY > 0) {
-//     menu.classList.add('active')
-//   }
-//   if (scrollY > 1795) {
-//     menu.classList.remove('active')
-//   }
-// }
-
-// function hovermenu() {
-//   if (scrollY > 0) {
-//     menu.classList.add('active')
-//   }
-//   if (scrollY > 1795) {
-//     menu.classList.remove('active')
-//   }
-// }
+function HoverAbout() {
+  if (scrollY > 3760) {
+    about.classList.add('active')
+  }
+  if (scrollY > 6119) {
+    about.classList.remove('active')
+  }
+  if (scrollY < 37) {
+    about.classList.remove('active')
+  }
+}
+function HoverContact() {
+  if (scrollY > 6120) {
+    contact.classList.add('active')
+  }
+  if (scrollY < 6119) {
+    contact.classList.remove('active')
+  }
+}
 
 function menuShow() {
   if (ul.classList.contains('open')) {
@@ -79,4 +82,6 @@ function all() {
   onScroll()
   HoverMenu()
   HoverProduct()
+  HoverAbout()
+  HoverContact()
 }
