@@ -19,10 +19,10 @@ nav {
   align-items: center;
   flex-wrap: wrap;
   padding: 21.7px;
-
+  position: fixed;
   z-index: 5;
   margin: auto;
-
+  background-color: white;
   width: 100vw;
   padding-bottom: 24px;
 }
@@ -103,7 +103,13 @@ nav .menu-btn i {
     background-color: none;
     color: #784f33;
   }
-
+  .plane-mail,
+  .tel,
+  .localization {
+    width: 30px;
+    color: #ffffff;
+    margin-top: 3px;
+  }
   #logos {
     margin: auto;
     flex-direction: column;
@@ -578,14 +584,6 @@ label {
   width: 32px;
 }
 
-.plane-mail,
-.tel,
-.localization {
-  width: 30px;
-  color: #ffffff;
-  margin-top: 3px;
-}
-
 .link h3 {
   font-family: 'Martel';
 }
@@ -615,23 +613,26 @@ label {
   * {
     box-sizing: border-box;
   }
-  nav {
-  }
+
   #front-menu {
     height: 785px;
     display: flex;
   }
+  body {
+    overflow-x: hidden;
+  }
 
-  html main {
+  html main,
+  nav {
     background-image: url(./assets/background_desktop.png);
   }
 
   main #home h2 {
     display: flex;
     flex-wrap: wrap;
-    width: 480px;
+    width: 490px;
     text-align: start;
-    font-size: 55px;
+    font-size: 45px;
 
     margin: 0;
     padding-left: 120px;
@@ -642,16 +643,21 @@ label {
     margin: 0;
     width: 490px;
     padding: 0 0 2rem 11rem;
+    text-align: left;
   }
   #home {
-    padding-left: 8rem;
+    margin-inline: auto;
   }
   .button-home {
     display: flex;
-    width: 480px;
+    width: 100%;
+    gap: 0;
     margin: 0;
-    padding-left: 12rem;
+    padding-left: 8rem;
     padding-top: 2rem;
+  }
+  .get {
+    margin-inline: 3rem 2rem;
   }
   .learn {
     margin: 0;
@@ -660,6 +666,7 @@ label {
     position: relative;
     width: 500px;
     margin: 0 auto;
+    top: 6rem;
   }
 
   .mulherIcon {
@@ -667,7 +674,7 @@ label {
 
   body .cards {
     display: flex;
-    width: 1046px;
+    width: 100%;
     margin: auto;
     flex-direction: row;
     height: 20rem;
@@ -713,6 +720,7 @@ label {
   .Agroup {
     display: flex;
     gap: 8rem;
+    width: 100%;
   }
   .homemrs {
     width: 598px;
@@ -765,10 +773,119 @@ label {
     display: flex;
     flex-wrap: wrap;
     margin-top: 0;
-    width: 90%;
+    width: 75%;
     padding-bottom: 3.5rem;
     text-align: center;
     z-index: 20;
     position: relative;
+    height: 124px;
+  }
+  label input[type='email'] {
+    margin: 0;
+    width: 450px;
+    height: 58px;
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    padding-top: 1rem;
+    margin-top: 2rem;
+  }
+  #group-input h3 {
+    text-align: left;
+    margin: 0 auto;
+    width: 50%;
+    padding-top: 1rem;
+  }
+
+  #group-input button {
+    margin-top: 2rem;
+  }
+  #logo svg {
+    width: 10px;
+  }
+  .cardct {
+    background-color: #f2f2f2;
+    margin-top: 0;
+    padding-top: 8rem;
+  }
+  .cardct1,
+  .cardct2,
+  .cardct3 {
+    height: 350px;
+    display: flex;
+    gap: 5px;
+    width: 300px;
+    margin: 0;
+    padding: 30px;
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+    flex-direction: column;
+  }
+  #contact {
+    display: flex;
+
+    flex-wrap: wrap;
+    background-color: #f2f2f2;
+    margin-bottom: 3rem;
+    gap: 0;
+    justify-content: center;
+    height: 700px;
+    padding-top: 10rem;
+  }
+
+  .cardct h2 {
+    font-size: 48px;
+  }
+
+  .cardct1,
+  .cardct3 {
+    margin-top: 5rem;
+    width: 323px;
+  }
+  .cardct2 {
+    width: 323px;
+    height: 440px;
+  }
+
+  #contactus {
+    display: flex;
+    width: auto;
+    height: 150px;
+    background: #ffff;
+  }
+  
+  #contactus1{
+    position: relative;
+    left: 3%;
+}
+  }
+  #Links {
+    display: flex;
+    margin: 0 auto;
+
+    list-style: none;
+
+    background: linear-gradient(
+      36deg,
+      rgba(33, 166, 223, 1) 54%,
+      rgba(51, 91, 245, 1) 90%
+    );
+    color: #fff;
+    padding: 6rem;
+    height: 300px;
+  }
+  .social-links h3 {
+    font-family: 'Martel';
+    font-size: 14px;
+    margin: auto;
+    width: 60%;
+    padding: 3rem;
+    /* width: 340px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30%;
+    /* position: relative; */
+    width: 90%;
   }
 }
