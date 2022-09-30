@@ -852,12 +852,12 @@ label {
     height: 150px;
     background: #ffff;
   }
-  
-  #contactus1{
+
+  #contactus1 {
     position: relative;
     left: 3%;
-}
   }
+
   #Links {
     display: flex;
     margin: 0 auto;
