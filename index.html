@@ -4,20 +4,24 @@
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link href="/project-legalide/style.css" rel="stylesheet" />
+<link href="./style.css" rel="stylesheet" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Martel:wght@700&display=swap"rel="stylesheet"/>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"/>
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 <title>Legalide</title>
 </head>
 <body onscroll="all()">
 <nav>
   
   <div class="logo">
-    <img src="/project-legalide/assets/Legalide.png" alt="logo-legalide" /></a>
+    <img src="/assets/Legalide.png" alt="logo-legalide" /></a>
   </div>
 
   <ul>
@@ -26,24 +30,66 @@
     <li><a onclick="menuShoww()"href="#about"id="aabout">About Us</a></li>
     <li><a onclick="menuShoww()" href="#contact"id="acontact">Contact</a></li>
   </ul>
+  <div class="icons-menu">
+
+
   <a href=""
     ><img
       class="search-icon"
-      src="/project-legalide/assets/icon-search.png"
+      src="./assets/icon-search.png"
       alt="Busca"
   /></a>
 
   <a href=""
     ><img
       class="shop-car"
-      src="/project-legalide/assets/shop-car.png"
+      src="./assets/shop-car.png"
       alt="Busca"
       style="padding-right: 7px"
   /></a>
+
+  <div class="menu-login">
+  <i onclick="loginshoww()"><img class="loginicon" src="./assets/Login.png"></i>
+</div>
   <div class="menu-btn">
-    <i onclick="menuShoww()"><img src="/project-legalide/assets/icn-menu.png" /></i>
+    <i onclick="menuShoww()"><img src="./assets/icn-menu.png" /></i>
   </div>
+</div>
 </nav>
+<div class="main-cont">
+<div id="container-log">
+  <div class="login-form">
+    <div class="title">Login</div>
+    <form action="#">
+      <div class="input-box">
+        <i class="fa fa-envelope"> </i>
+        <input type="email" placeholder="Enter your email" required />
+      </div>
+
+      <div class="input-box">
+        <i class="fa fa-lock"> </i>
+        <input type="password" placeholder="Enter your password" required />
+      </div>
+      <div class="forgot"><a href="#">Esqueceu a senha ?</a></div>
+      <div class="input-box">
+        <input type="submit" value="Login" />
+      </div>
+      <div class="divider">ou</div>
+      <div class="midias-sociais2">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+         <a href="#"> <i class="fa fa-github"></i>
+        <a href="#"> <i class="fa fa-google"></i>
+      </div>
+      <div class="sigup-text">
+       Não tem uma conta?<a href="#">Crie uma agora!</a>
+      </div>
+      <!-- End login -->
+      </div>
+      <div class="login-img"><img src="./assets/Softwarecode.png" /></div>
+    </form>
+  </div>
+</div>
+
 <main id="front-menu">
   <div id="home">
   <h2>
@@ -66,7 +112,7 @@ but things on a small scale.
  <div class="mulherIcon">
   <picture>
     <source srcset="./assets/moçagrandona.png" media="(min-width:1024px)"></source>
-    <img src="/project-legalide/assets/moça.png" class="mulher" alt="Mulher sorrindo" /> 
+    <img src="./assets/moça.png" class="mulher" alt="Mulher sorrindo" /> 
   </picture>
 </div>
 </main>
@@ -84,18 +130,18 @@ but things on a small scale.
   <div class="cards">
     <div class="card">
       <img
-        src="/project-legalide/assets/icn settings .icn-lg.png"
+        src="./assets/icn settings .icn-lg.png"
         alt="Balança Têmis"
       />
       <p>Family Law</p>
     </div>
     <div class="card2">
-      <img src="/project-legalide/assets/martelo.png" alt="Malhete" />
+      <img src="./assets/martelo.png" alt="Malhete" />
       <p>Bussines Law</p>
     </div>
     <div class="card">
       <img
-        src="/project-legalide/assets/cardlist.png"
+        src="./assets/cardlist.png"
         alt="Balanla Têmis"
       />
       <p>Trust & Estates</p>
@@ -118,7 +164,7 @@ but things on a small scale.
         light was made up of 
         particles, but then it 
         was discovered</p>
-      <img src="/project-legalide/assets/img1sec3.png" />
+      <img src="./assets/img1sec3.png" />
     </div>
 
     <div class="cartoes">
@@ -127,7 +173,7 @@ but things on a small scale.
         is the description of the
         behaviour of matter</p>
       </p>
-      <img src="/project-legalide/assets/img2sec3.png" />
+      <img src="./assets/img2sec3.png" />
     </div>
 
     <div class="cartoes">
@@ -135,7 +181,7 @@ but things on a small scale.
       <p>They describe a
       universe consisting of
       bodies moving</p>
-      <img src="/project-legalide/assets/img3sec3.png" />
+      <img src="./assets/img3sec3.png" />
     </div>
 
     <div class="cartoes">
@@ -144,7 +190,7 @@ but things on a small scale.
       <p>They finally obtained 
         a consistent description 
         of the behaviour </p>
-      <img src="/project-legalide/assets/img4sec3.png" />
+      <img src="./assets/img4sec3.png" />
     </div>
   </div>
 </section>
@@ -159,7 +205,7 @@ but things on a small scale.
     <picture>
       
       <source srcset="./assets/homigrande.png" media="(min-width:1024px)"></source>
-    <img  class="homemrs"src="/project-legalide/assets/video.png" alt="homem sorrindo">
+    <img  class="homemrs"src="./assets/video.png" alt="homem sorrindo">
   </picture>
 </div>
     <div class="grouping1">
@@ -173,14 +219,14 @@ but things on a small scale.
         <div class="grouping">
           <div class="container">
             <img class="img">
-              <img height="32px" src="/project-legalide/assets/peoples.png">
+              <img height="32px" src="./assets/peoples.png">
               <h4>the quick fox jumps over the lazy<br>
               dog</h4>
               <p>Things on a very small scale ...</p>
           </div>
           <div class="container">
             <img class="img">
-              <img height="32px" src="/project-legalide/assets/iconelg.png">
+              <img height="32px" src="./assets/iconelg.png">
               <h4>the quick fox jumps over the lazy <br>
                 dog</h4>
                 <p>Things on a very small scale ...</p>
@@ -354,9 +400,9 @@ but things on a small scale.
 <div class="link">
   <ul>
     <h4>Get In Touch</h4>
-    <li><img class="tel1"src="/project-legalide/assets/tel1.png"><a href="tel:+55(480) 555-0103"></a></li>
-    <li><img class="localization1"src="/project-legalide/assets/local1.png"><a href="#"></a></li>
-    <li><img class="plane-mail1"src="/project-legalide/assets/aviao1.png"><a href="mailto:debra.holt@example.com">debra.holt@example.com</a></li>
+    <li><img class="tel1"src="./assets/tel1.png"><a href="tel:+55(480) 555-0103"></a></li>
+    <li><img class="localization1"src="./assets/local1.png"><a href="#"></a></li>
+    <li><img class="plane-mail1"src="./assets/aviao1.png"><a href="mailto:debra.holt@example.com">debra.holt@example.com</a></li>
     </ul>
   
  </div>
@@ -368,16 +414,16 @@ but things on a small scale.
  
   <div class="social-icon">
   <ul><li>
-    <img src="/project-legalide/assets/facebookicon.png" class="icon">
+    <img src="./assets/facebookicon.png" class="icon">
   </li>
   <li>
-    <img src="/project-legalide/assets/Instaicon.png" class="icon">
+    <img src="./assets/Instaicon.png" class="icon">
   </li>
   <li>
-    <img src="/project-legalide/assets/twittter icon.png" class="icon">
+    <img src="./assets/twittter icon.png" class="icon">
   </li>
   <li>
-    <img src="/project-legalide/assets/youtubeicon.png" class="icon">
+    <img src="./assets/youtubeicon.png" class="icon">
   </li>
 </ul>
 </div>

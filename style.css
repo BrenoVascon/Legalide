@@ -2,6 +2,7 @@
 :root {
   font-size: 62.5%;
   --secondary-color: #784f33;
+  --default-color: #7b68ee;
 }
 html {
   scroll-behavior: smooth;
@@ -12,7 +13,13 @@ html {
   font-family: 'Martel', serif;
 }
 /*=====================NAV==================== */
-
+.loginicon {
+  width: 20px;
+}
+.icons-menu {
+  display: flex;
+  gap: 20px;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -58,7 +65,7 @@ nav .menu-btn i {
   display: none;
 }
 
-@media (max-width: 620px) {
+@media (max-width: 1024px) {
   .hidden {
     overflow: hidden;
   }
@@ -91,6 +98,23 @@ nav .menu-btn i {
   nav ul.open {
     left: 0;
   }
+
+  .main-cont {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s;
+    z-index: 3;
+    overflow: hidden;
+  }
+  .main-cont.open {
+    left: 0;
+  }
+
   nav ul li {
     /* width: 100%; */
     margin: 50px 0;
@@ -134,7 +158,94 @@ nav .menu-btn i {
   right: 37px;
   top: 29.6px; 
 }*/
+/* ===================LOGIN FORM =================*/
 
+#container-log .login-form .title {
+  font-size: 25px;
+  position: relative;
+  font-weight: 500;
+  color: #333;
+  text-align: left;
+}
+#container-log .login-form .title::before {
+  content: '';
+  width: 22px;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  top: 30px;
+  background-color: var(--default-color);
+}
+#container-log {
+  max-width: 850px;
+  background: #f2f2f2;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 40%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px 30px;
+}
+
+.main-cont img {
+  width: 450px;
+}
+
+#container-log .login-form .input-box input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 30px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+.main-cont {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--default-color);
+  padding: 40px;
+}
+
+#container-log .login-form .input-box {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  margin: 10px 0;
+  position: relative;
+}
+#container-log .login-form .input-box input[type='submit'] {
+  background: var(--default-color);
+  padding: 10px;
+  color: #f2f2f2;
+  border-radius: 5px;
+}
+
+#container-log .login-form .input-box i {
+  color: var(--default-color);
+  font-size: 17px;
+  position: absolute;
+}
+.midias-sociais2 {
+  text-align: center;
+}
+.divider {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 500;
+}
+.midias-sociais2 i {
+  font-size: 30px;
+  margin: 10px;
+}
+@media (max-width: 768px) {
+  .login-img {
+    display: none;
+  }
+}
 /*===================== Body, Main================ */
 * {
   margin: 0;
@@ -669,9 +780,6 @@ label {
     top: 6rem;
   }
 
-  .mulherIcon {
-  }
-
   body .cards {
     display: flex;
     width: 100%;
@@ -887,5 +995,36 @@ label {
     gap: 30%;
     /* position: relative; */
     width: 90%;
+  }
+  .main-cont {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.5s;
+    z-index: 3;
+    overflow: hidden;
+  }
+
+  .main-cont.open {
+    left: 0;
+  }
+  .main-cont.open {
+    min-height: 100vh;
+
+    align-items: center;
+    justify-content: center;
+    background-color: var(--default-color);
+    padding: 40px;
+  }
+  #container-log.open {
+    margin: 0;
+  }
+  nav ul {
+    gap: 80px;
   }
 }

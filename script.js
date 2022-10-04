@@ -5,6 +5,7 @@ var contact = document.querySelector('#acontact')
 var product = document.querySelector('#aproduct')
 var about = document.querySelector('#aabout')
 var menu = document.querySelector('nav ul li a')
+var menuLogin = document.querySelector('.main-cont')
 // window.addEventListener('scroll', all())
 
 function onScroll() {
@@ -52,6 +53,26 @@ function HoverContact() {
   }
 }
 
+function loginshow() {
+  if (menuLogin.classList.contains('open')) {
+    menuLogin.classList.remove('open')
+  } else {
+    menuLogin.classList.add('open')
+  }
+}
+
+function loginshowww() {
+  if (menuLogin.classList.contains('open')) {
+    ul.classList.remove('open')
+  }
+}
+
+function removeLogin() {
+  if (ul.classList.contains('open')) {
+    menuLogin.classList.remove('open')
+  }
+}
+
 function menuShow() {
   if (ul.classList.contains('open')) {
     ul.classList.remove('open')
@@ -76,8 +97,14 @@ function menuClose() {
 function menuShoww() {
   menuShow()
   hidden()
+  removeLogin()
 }
 
+function loginshoww() {
+  loginshow()
+  hidden()
+  loginshowww()
+}
 function all() {
   onScroll()
   HoverMenu()
